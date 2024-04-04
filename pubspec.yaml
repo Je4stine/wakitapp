@@ -23,7 +23,7 @@ dependencies:
 
   #Network
   http: ^1.2.1
-  connectivity_plus: ^5.0.2
+  connectivity_plus: ^6.0.1
 
   #State Management
   mobx: ^2.3.0+1
@@ -70,9 +70,9 @@ dependencies:
   image_picker: ^1.0.7
   permission_handler: ^11.3.0
   flutter_html: ^2.2.1
-  flutter_tts: ^3.8.5
+  flutter_tts: ^4.0.2
   draggable_bottom_sheet: ^1.0.2
-  share_plus: ^7.2.2
+  share_plus: ^8.0.2
   flutter_time_picker_spinner: ^2.0.0
   flutter_bounce: ^1.1.0
   card_swiper: ^3.0.1
@@ -84,15 +84,15 @@ dependencies:
     sdk: flutter
 
   #chart
-  syncfusion_flutter_charts: ^24.2.8
+  syncfusion_flutter_charts: ^25.1.38
   path_provider: ^2.1.2
 
   #payment
   razorpay_flutter: ^1.3.6
   flutter_stripe: ^10.0.0
   flutter_paystack: ^1.0.7
-  flutter_braintree: ^3.0.0
-  #flutterwave_standard: ^1.0.8
+  flutter_braintree: ^4.0.0
+  flutterwave_standard: ^1.0.8
   flutter_paytabs_bridge: ^2.6.7
   paytm: ^3.0.1
   my_fatoorah: ^3.3.0
@@ -103,6 +103,9 @@ dependency_overrides:
   flutter_html: ^2.2.1
   flutter_svg: ^1.0.0
   flutter_layout_grid: ^2.0.5
+  flutterwave_standard: ^1.0.8
+#  flutter_paystack: ^1.0.7
+
 
 dev_dependencies:
   flutter_test:
