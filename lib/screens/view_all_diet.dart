@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../extensions/extension_util/string_extensions.dart';
 import '../../extensions/extension_util/widget_extensions.dart';
 import '../../extensions/widgets.dart';
-import '../components/adMob_component.dart';
 import '../components/featured_diet_component.dart';
 import '../extensions/animatedList/animated_list_view.dart';
 import '../extensions/loader_widget.dart';
@@ -110,7 +109,7 @@ class _ViewAllDietState extends State<ViewAllDiet> {
           Loader().center().visible(appStore.isLoading)
         ],
       ),
-      bottomNavigationBar: userStore.adsBannerDetailShowBannerAdsOnDiet == 1 && userStore.isSubscribe == 0 ? showBannerAds(context) : SizedBox(),
+      bottomNavigationBar: userStore.adsBannerDetailShowBannerAdsOnDiet == 1 && userStore.isSubscribe == 0 ? SizedBox() : SizedBox(),
     );
   }
 }

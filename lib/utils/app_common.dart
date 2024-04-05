@@ -12,7 +12,6 @@ import '../../extensions/extension_util/string_extensions.dart';
 import '../../extensions/extension_util/widget_extensions.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_images.dart';
-import '../components/adMob_component.dart';
 import '../extensions/constants.dart';
 import '../extensions/decorations.dart';
 import '../extensions/setting_item_widget.dart';
@@ -279,13 +278,13 @@ Future<void> getUSerDetail(BuildContext context, int? id) async {
 
 void showInterstitialAds() {
   if (userStore.isSubscribe == 0) {
-    adShow();
+   // adShow();
   }
 }
 
 void loadInterstitialAds() {
   if (userStore.isSubscribe == 0) {
-    createInterstitialAd();
+    //createInterstitialAd();
   }
 }
 

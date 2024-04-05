@@ -3,7 +3,6 @@ import '../../components/body_part_component.dart';
 import '../../extensions/extension_util/widget_extensions.dart';
 import '../../extensions/loader_widget.dart';
 import '../../extensions/widgets.dart';
-import '../components/adMob_component.dart';
 import '../extensions/animatedList/animated_wrap.dart';
 import '../main.dart';
 import '../models/body_part_response.dart';
@@ -87,6 +86,6 @@ class _ViewBodyPartScreenState extends State<ViewBodyPartScreen> {
             Loader().center().visible(appStore.isLoading)
           ],
         ),
-        bottomNavigationBar: userStore.adsBannerDetailShowBannerOnBodyPart == 1 && userStore.isSubscribe == 0 ? showBannerAds(context) : SizedBox());
+        bottomNavigationBar: userStore.adsBannerDetailShowBannerOnBodyPart == 1 && userStore.isSubscribe == 0 ? SizedBox(): SizedBox());
   }
 }

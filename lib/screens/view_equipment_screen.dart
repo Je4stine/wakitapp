@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../components/equipment_component.dart';
 import '../../extensions/extension_util/widget_extensions.dart';
 import '../../extensions/loader_widget.dart';
-import '../components/adMob_component.dart';
 import '../extensions/animatedList/animated_wrap.dart';
 import '../extensions/widgets.dart';
 import '../main.dart';
@@ -88,6 +87,6 @@ class _ViewEquipmentScreenState extends State<ViewEquipmentScreen> {
             Loader().center().visible(appStore.isLoading)
           ],
         ),
-        bottomNavigationBar: userStore.adsBannerDetailShowBannerOnEquipment == 1 && userStore.isSubscribe == 0 ? showBannerAds(context) : SizedBox());
+        bottomNavigationBar: userStore.adsBannerDetailShowBannerOnEquipment == 1 && userStore.isSubscribe == 0 ? SizedBox() : SizedBox());
   }
 }

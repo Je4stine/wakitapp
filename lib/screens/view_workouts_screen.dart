@@ -4,7 +4,6 @@ import '../../components/workout_component.dart';
 import '../../extensions/extension_util/widget_extensions.dart';
 import '../../extensions/loader_widget.dart';
 import '../../screens/no_data_screen.dart';
-import '../components/adMob_component.dart';
 import '../extensions/animatedList/animated_list_view.dart';
 import '../extensions/widgets.dart';
 import '../main.dart';
@@ -103,6 +102,6 @@ class _ViewWorkoutsScreenState extends State<ViewWorkoutsScreen> {
             Loader().center().visible(appStore.isLoading)
           ],
         ),
-        bottomNavigationBar: userStore.adsBannerDetailShowBannerOnWorkouts == 1 && userStore.isSubscribe == 0 ? showBannerAds(context) : SizedBox());
+        bottomNavigationBar: userStore.adsBannerDetailShowBannerOnWorkouts == 1 && userStore.isSubscribe == 0 ? SizedBox(): SizedBox());
   }
 }

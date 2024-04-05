@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../extensions/extension_util/int_extensions.dart';
 import '../extensions/extension_util/widget_extensions.dart';
 import '../screens/no_data_screen.dart';
-import '../components/adMob_component.dart';
 import '../components/product_component.dart';
 import '../extensions/animatedList/animated_wrap.dart';
 import '../extensions/loader_widget.dart';
@@ -107,7 +106,7 @@ class _ViewAllProductScreenState extends State<ViewAllProductScreen> {
           Loader().center().visible(appStore.isLoading)
         ],
       ),
-      bottomNavigationBar: userStore.adsBannerDetailShowBannerOnProduct == 1 && userStore.isSubscribe == 0 ? showBannerAds(context) : SizedBox(),
+      bottomNavigationBar: userStore.adsBannerDetailShowBannerOnProduct == 1 && userStore.isSubscribe == 0 ? SizedBox() : SizedBox(),
     );
   }
 }

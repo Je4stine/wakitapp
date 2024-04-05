@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../extensions/extension_util/widget_extensions.dart';
 import '../../extensions/loader_widget.dart';
 import '../../extensions/widgets.dart';
-import '../components/adMob_component.dart';
 import '../components/level_component.dart';
 import '../extensions/animatedList/animated_list_view.dart';
 import '../main.dart';
@@ -86,7 +85,7 @@ class _ViewLevelScreenState extends State<ViewLevelScreen> {
           Loader().center().visible(appStore.isLoading)
         ],
       ),
-      bottomNavigationBar: userStore.adsBannerDetailShowBannerOnLevel == 1 && userStore.isSubscribe == 0 ? showBannerAds(context) : SizedBox(),
+      bottomNavigationBar: userStore.adsBannerDetailShowBannerOnLevel == 1 && userStore.isSubscribe == 0 ? SizedBox() : SizedBox(),
     );
   }
 }

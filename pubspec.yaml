@@ -53,7 +53,6 @@ dependencies:
   chewie: ^1.7.5
 
   #ads
-  google_mobile_ads: ^2.4.0
 
   #step count
   pedometer: ^4.0.1
